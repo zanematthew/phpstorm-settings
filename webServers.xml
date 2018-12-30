@@ -1,0 +1,96 @@
+<application>
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="34479bf8-275b-499b-9f51-d43049b92c13" name="Entrata" url="https://entrata-work-order-form.valet/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="1bc87265-86eb-4011-9d4f-0744afbddc6f" name="Trillium" url="http://localhost:8080">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="4dfc34a3-2c86-4612-9cf0-c614c4a8d358" name="Rush Ortho" url="http://localhost:8080">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="7d1bc77e-21d9-4274-a0f3-ece237b31bbc" name="DrupalVM" url="http://drupalvm.test">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="89d1e139-203f-4c8c-8edb-36d8b804d7bd" name="Blessing Health Services" url="http://localhost:8080">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="278c8424-64ae-42b7-8ee4-e0777efd8895" name="Rush UNV" url="https://localhost:8443">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="a3c93323-4558-492c-bb45-cc32855a7efb" name="MUCATSA Dev" url="http://mucatsa.dev.dd:8083">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="2597fa39-36b0-42fa-914e-cc82ab02acd0" name="Corvias" url="http://localhost:8080">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="3fe4a106-880e-4f8e-9512-3340ef29acd1" name="SLCH Dev" url="http://slchr.app.dd:8083/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="cff3cb84-1887-480e-9793-7cae3420f352" name="MU CATSA Prod (Acquia)" url="http://mucatsa.prod.dd:8083/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="ac4e4123-3063-4b73-b3f2-d8009121ef75" name="UMASS Intranet" url="http://umass-intranet.dd:8083/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="cbb78891-34ec-4907-b08d-b22429e460ab" name="Drupal Demo" url="http://localhost">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="e6679e5e-3fb8-4618-9720-203a261a21da" name="umass-intranet-acquia" url="http://ummhc.dev.dd:8083/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="cb2ffbc5-dad7-4935-bd55-56dbd1041100" name="Demo App" url="http://localhost">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="c77bfde6-bec7-4207-95d1-fad4de13f778" name="umass-docker" url="http://umass-docker.test">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="809b7883-cd1a-4517-8c90-7c66c796461e" name="rumc.dev" url="http://rumc.dev.dd:8083">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="3b7d8cfc-9d13-4484-87b7-02a6bbd06918" name="RUSHU" url="http://rushuniversity.dev.dd:8083/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="29df3469-e815-4167-8b39-2d079ecec713" name="Nebraska Medical [DEV]" url="http://nebraskamedical.dev.dd">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="7822cd55-f92e-4c65-9a15-dea15bf3e343" name="Nebraska Medical" url="https://nebraskamedical.prod.dd:8443">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="3ed5a8b6-9a60-4fef-b73d-96ff0139e40d" name="Nebraska Medical Dev" url="http://nebraskamedical.dev.dd:8083/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="9d21272d-2025-4fa5-9d9a-441adc7b903b" name="KKI" url="http://kennedykrieger.dev.dd:8083/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="399776d9-3d5d-4f1f-a04d-4e77ff8a8b5c" name="UMMHC [Docker Dev]" url="https://l.ummhc:10443/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="d6c62b3f-263a-464b-969f-5ed9acb3e9c6" name="SOM (School of Medicine, Missouri)" url="https://som.dev.dd:8443/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="75384485-fd57-44e2-8e7c-da3c60f83df7" name="Nebraska [Docker Dev]" url="https://l.nebraska:10443">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="fc0fb3b6-557a-4f9c-bb9b-6eb6ab58de40" name="MOHealth/MUHealth [Dev Desktop]" url="https://mohealth.dev.dd:8443">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="328de770-529d-4bb1-892c-c4f9927b60ff" name="Infosec" url="http://infosec.test:8080/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="b397f7b3-00c6-4f2e-af33-ebd17b8b9842" name="UMass RSS Feed" url="http://umass-memorial-hospital-rss.test:8080/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="b8bce425-1286-472b-a356-48add5555687" name="Froedtert" url="http://froedtert.test:8080/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="53247781-aa2d-4f9e-b77c-b72de5391f4e" name="roph-dev" url="https://roph.dev.dd:8443/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="5ba4ccd8-c789-41f8-a2e2-38dd7701cf19" name="Infosec D8" url="http://l.infosec-d8:8080">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+    </option>
+  </component>
+</application>

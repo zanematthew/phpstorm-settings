@@ -1,0 +1,198 @@
+<templateSet group="Drupal 8.5">
+  <template name="ZM::QueueWorker" value="&#10;namespace Drupal\$namespace$\Plugin\QueueWorker;&#10;&#10;use Drupal\Core\Annotation\QueueWorker;&#10;use Drupal\Core\Annotation\Translation;&#10;use Drupal\Core\Queue\QueueWorkerBase;&#10;use Drupal\Core\Plugin\ContainerFactoryPluginInterface;&#10;use Symfony\Component\DependencyInjection\ContainerInterface;&#10;&#10;/**&#10; * @QueueWorker(&#10; *   id = &quot;$namespace$_$id$&quot;,&#10; *   title = @Translation(&quot;$description$&quot;),&#10; *   cron = { &quot;time&quot; = $time$ }&#10; * )&#10; *&#10; * @package Drupal\umass_workflow\Plugin\QueueWorker&#10; */&#10;class $classname$ extends QueueWorkerBase implements ContainerFactoryPluginInterface {&#10;&#10;  /**&#10;   * @param \Symfony\Component\DependencyInjection\ContainerInterface $container&#10;   * @param array $configuration&#10;   * @param string $plugin_id&#10;   * @param mixed $plugin_definition&#10;   *&#10;   * @return static&#10;   */&#10;  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {&#10;    return new static($configuration, $plugin_id, $plugin_definition);&#10;  }&#10;&#10;  /**&#10;   * $classname$ constructor.&#10;   *&#10;   * @param array $configuration&#10;   * @param string $plugin_id&#10;   * @param $plugin_definition&#10;   */&#10;  public function __construct(array $configuration, string $plugin_id, $plugin_definition) {&#10;    parent::__construct($configuration, $plugin_id, $plugin_definition);&#10;  }&#10;&#10;  /**&#10;   * @param mixed $data&#10;   *&#10;   * @throws \Exception&#10;   */&#10;  public function processItem($data) {&#10;    // your code here&#10;  }&#10;}" description="Stub for QueueWorker" toReformat="true" toShortenFQNames="true">
+    <variable name="namespace" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="time" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="classname" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ZM::HtmlCommand" value="namespace Drupal\$namespace$\Ajax;&#10;&#10;use Drupal\Core\Ajax\CommandInterface;&#10;&#10;// Usage;&#10;//    $ajaxResponse = new AjaxResponse();&#10;//    $ajaxResponse-&gt;addCommand(new DeleteStudentCommand($userId));&#10;// you'll also need the matching JS, see ZM::ajax-command.js&#10;class $Classname$HtmlCommand implements CommandInterface {&#10;  /**&#10;   * A simple render array that is required and links back-end variables to the&#10;   * front-end.&#10;   *&#10;   * @return array&#10;   */&#10;  public function render(): array {&#10;    return [&#10;      'command' =&gt; '$ajaxCommand$',&#10;    ];&#10;  }&#10;}" description="This is used to manipulate HTML after an AJAX request is sent." toReformat="true" toShortenFQNames="true">
+    <variable name="namespace" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Classname" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ajaxCommand" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ZM::AJAX JS" value="// Don't forget to add this to the library file so its loaded;&#10;// name-space:&#10;//   version: VERSION&#10;//   js:&#10;//     js/file-name.js: {}&#10;//   dependencies:&#10;//    - core/jquery&#10;//    - core/drupal&#10;//    - core/drupal.ajax&#10;// Don't forget to attach the library to a form(?)&#10;//  $form['#attached']['library'][] = 'namespace/name';&#10;    &#10;(function ($, window, Drupal, drupalSettings) {&#10;    Drupal.AjaxCommands.prototype.$ajaxCommand$ = function(ajax, response, status){&#10;        console.log(ajax);&#10;        console.log(response);&#10;        console.log(status);&#10;    };&#10;})(jQuery, this, Drupal, drupalSettings);&#10;" description="Matching JS file for HtmlCommand" toReformat="true" toShortenFQNames="true">
+    <variable name="ajaxCommand" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PHP" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SQL" value="false" />
+      <option name="Twig" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="Vue" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="ZM::Route" value="$name$.index:&#10;  path: '/$path$'&#10;  defaults:&#10;    _controller: '\Drupal\$namespace$\Controller\$class$Controller::index'&#10;    _title: '$title$'&#10;  requirements:&#10;    _permission: '$permission$'" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="path" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="namespace" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="title" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="permission" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PHP" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SQL" value="false" />
+      <option name="Twig" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="Vue" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="ZM::ModuleInfo" value="name: '$name$'&#10;description: &quot;$description$&quot;&#10;package: '$package$'&#10;type: module&#10;core: '8.x'&#10;dependencies:&#10;  - $module$" description="Shell of *.info.yml" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="package" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PHP" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SQL" value="false" />
+      <option name="Twig" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="Vue" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="ZM::render-ajax" value="[&#10;  '#type' =&gt; '$type$',&#10;  '#ajax' =&gt; [&#10;    'callback' =&gt; '::$myMethod$Callback',&#10;    'event' =&gt; 'change',&#10;    'progress' =&gt; [&#10;      'type' =&gt; 'throbber',&#10;      'message' =&gt; NULL,&#10;    ],&#10;  ],&#10;]" description="Snippet for render array #ajax." toReformat="false" toShortenFQNames="true">
+    <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="myMethod" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ZM::ModuleLibrary" value="$css_namespace$:&#10;  version: $version$&#10;  css:&#10;    theme:&#10;      css/$css_file$.css: {}&#10;&#10;$js_namespace$:&#10;  js:&#10;    js/$jsfile$.js: {}&#10;  dependencies:&#10;   - $module_namespace$/$library_namespace$&#10;   - umass_theme/bootstrap-select&#10;# Sample external file.&#10;# cookies:&#10;#  js:&#10;#    '//cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js': { type: external, minified: true }" description="Stub for *.libraries.yml" toReformat="true" toShortenFQNames="true">
+    <variable name="css_namespace" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="version" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="css_file" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="js_namespace" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="jsfile" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="module_namespace" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="library_namespace" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PHP" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SQL" value="false" />
+      <option name="Twig" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="Vue" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="ZM::MenuLinks" value="# Sample admin menu link&#10;$module_namespace$.admin:&#10;  title: '$menu_title$'&#10;  description: '$menu_page_description$'&#10;  parent: system.admin_config_services # see docs for these.&#10;  route_name: $some_namespace$.settings # Create the route as needed&#10;  weight: 100" description="Stub for *.links.menu.yml" toReformat="false" toShortenFQNames="true">
+    <variable name="module_namespace" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="menu_title" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="menu_page_description" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="some_namespace" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PHP" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SQL" value="false" />
+      <option name="Twig" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="Vue" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="ZM::RoutingAdmin" value="$module_namespace$.settings:&#10;  path: '/admin/structure/$namespace$/settings'&#10;  defaults:&#10;    _form: '\Drupal\$module_namespace$\Form\$class_name$SettingsForm'&#10;    _title: '$description$'&#10;  requirements:&#10;    _permission: 'administer site configuration' # Change as needed." description="Stub for *.routing.yml" toReformat="false" toShortenFQNames="true">
+    <variable name="module_namespace" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="namespace" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="class_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PHP" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SQL" value="false" />
+      <option name="Twig" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="Vue" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="ZM::BlockConfig" value="&#10;namespace Drupal\$ClassName$\Plugin\Block;&#10;&#10;use Drupal\Core\Block\Annotation\Block;&#10;use Drupal\Core\Block\BlockBase;&#10;use Drupal\Core\Form\FormStateInterface;&#10;&#10;/**&#10; * Class $ClassName$&#10; *&#10; * @package Drupal\$ClassName$\Plugin\Block&#10; * @Block(&#10; *   id=&quot;$ClassName$&quot;,&#10; *   admin_label=&quot;$Blockadminlabel$&quot;&#10; * )&#10; */&#10;class $ClassName$ extends BlockBase {&#10;&#10;  protected $contentFieldName;&#10;&#10;  public function __construct(array $configuration, $plugin_id, $plugin_definition) {&#10;    $this-&gt;contentFieldName = 'content';&#10;    parent::__construct($configuration, $plugin_id, $plugin_definition);&#10;  }&#10;&#10;  public function build() {&#10;    return [&#10;      '#theme' =&gt; '$some_theme_id$', // defined in the *.module theme hook&#10;      '#text' =&gt; [&#10;        '#type' =&gt; 'processed_text',&#10;        '#text' =&gt; $this-&gt;configuration[$this-&gt;contentFieldName]['value'],&#10;        '#format' =&gt; 'full_html',&#10;      ],&#10;    ];&#10;  }&#10;&#10;  public function blockForm($form, FormStateInterface $form_state) {&#10;    $form[$this-&gt;contentFieldName] = [&#10;      '#type' =&gt; 'text_format',&#10;      '#title' =&gt; $this-&gt;t('Text'),&#10;      '#format' =&gt; 'full_html',&#10;      '#default_value' =&gt; $this-&gt;configuration[$this-&gt;contentFieldName]['value'],&#10;    ];&#10;    return $form;&#10;  }&#10;&#10;  public function blockSubmit($form, FormStateInterface $form_state) {&#10;    $this-&gt;configuration[$this-&gt;contentFieldName] = $form_state-&gt;getValue($this-&gt;contentFieldName);&#10;  }&#10;&#10;  public function defaultConfiguration() {&#10;    return [&#10;      $this-&gt;contentFieldName =&gt; '',&#10;    ];&#10;  }&#10;}" description="A block with configuration fields." toReformat="false" toShortenFQNames="true">
+    <variable name="ClassName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Blockadminlabel" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="some_theme_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ZM::Form" value="namespace Drupal\$namespace$\Form;&#10;&#10;use Drupal\Core\Form\FormBase;&#10;use Drupal\Core\Form\FormStateInterface;&#10;&#10;class $ClassName$ extends FormBase {&#10;&#10;  public function getFormId() {&#10;    return '$form_id$';&#10;  }&#10;&#10;  public function buildForm(array $form, FormStateInterface $form_state) {&#10;    $form['$someFieldName$'] = [&#10;      '#type' =&gt; 'text',&#10;    ];&#10;    return $form;&#10;  }&#10;  &#10;  public function submitForm(array &amp;$form, FormStateInterface $form_state) {}&#10;}&#10;" description="Back-end for a front-end facing form." toReformat="false" toShortenFQNames="true">
+    <variable name="namespace" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ClassName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="form_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="someFieldName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ZM::ThemeHook" value="function $namespace$_theme() {&#10;  return [&#10;    '$some_theme_id$' =&gt; [&#10;      'template' =&gt; 'some-file-name.html.twig',// this file is stored in templates/&#10;      'variables' =&gt; [&#10;        '$variable_name$' =&gt; '', // This has data from the build method.&#10;      ],&#10;    ],&#10;  ];&#10;}" description="Shell of theme hook function" toReformat="false" toShortenFQNames="true">
+    <variable name="namespace" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="some_theme_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="variable_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ZM::FormJS" value="## Example: my_module.libraries.yml&#10;# foo:&#10;#   js:&#10;#     js/foo.js: {}&#10;&#10;&#10;$form['#attached']['library'][] = '$my_module$/$my_js_file$'; &#10;" description="Add a JS file to a form." toReformat="false" toShortenFQNames="true">
+    <variable name="my_module" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="my_js_file" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
