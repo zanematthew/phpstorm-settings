@@ -94,6 +94,9 @@
       <webServer id="2773461f-a9f9-483d-b7a2-463c1c917e28" name="[2020] Nebrasak" url="http://nebraska.test:8080">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="2248d145-4e07-4e84-82d6-6a55a4864f82" name="Froedtert" url="http://froedtert.test:8080">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
