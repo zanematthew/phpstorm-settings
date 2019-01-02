@@ -91,6 +91,9 @@
       <webServer id="5ba4ccd8-c789-41f8-a2e2-38dd7701cf19" name="Infosec D8" url="http://l.infosec-d8:8080">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="2773461f-a9f9-483d-b7a2-463c1c917e28" name="[2020] Nebrasak" url="http://nebraska.test:8080">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
