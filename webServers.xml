@@ -97,6 +97,9 @@
       <webServer id="2248d145-4e07-4e84-82d6-6a55a4864f82" name="Froedtert" url="http://froedtert.test:8080">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="119acb91-4734-470e-9180-f962f032720c" name="BHS [2020]" url="http://blessing-health-system.test:8080">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
