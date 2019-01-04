@@ -94,10 +94,13 @@
       <webServer id="2773461f-a9f9-483d-b7a2-463c1c917e28" name="[2020] Nebrasak" url="http://nebraska.test:8080">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
-      <webServer id="2248d145-4e07-4e84-82d6-6a55a4864f82" name="Froedtert" url="http://froedtert.test:8080">
+      <webServer id="2248d145-4e07-4e84-82d6-6a55a4864f82" name="Froedtert (1)" url="http://froedtert.test:8080">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
       <webServer id="119acb91-4734-470e-9180-f962f032720c" name="BHS [2020]" url="http://blessing-health-system.test:8080">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="58c33e4c-1c66-4550-aba0-bb9de5004cc2" name="Infosec [2020]" url="http://infosec.test:8080/">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
     </option>
