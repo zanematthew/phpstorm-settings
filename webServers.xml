@@ -106,6 +106,9 @@
       <webServer id="400af381-b9e8-4103-a2c6-8d203bfdfdc3" name="WSU" url="http://wsu.test:8080/">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="8672fcc4-4ce5-49b9-97f9-7de0f6f3b636" name="Valley Health D8" url="http://valley-health-d8.test:8080">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
