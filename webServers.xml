@@ -103,6 +103,9 @@
       <webServer id="58c33e4c-1c66-4550-aba0-bb9de5004cc2" name="Infosec [2020]" url="http://infosec.test:8080/">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="400af381-b9e8-4103-a2c6-8d203bfdfdc3" name="WSU" url="http://wsu.test:8080/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
