@@ -109,6 +109,9 @@
       <webServer id="8672fcc4-4ce5-49b9-97f9-7de0f6f3b636" name="Valley Health D8" url="http://valley-health-d8.test:8080">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="c5488c06-773e-4d25-bc3f-dc90a5edbc46" name="Corvais [2020]" url="http://corvias.test:8080">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
