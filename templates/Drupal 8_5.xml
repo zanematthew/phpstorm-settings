@@ -195,4 +195,9 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="ZM::createDependencyInjections" value="  // Edit as needed, make sure to include the needed classes.&#10;  protected $viewBuilder;&#10;&#10;  protected $nodeStorage;&#10;&#10;  protected $account;&#10;&#10;  public function __construct(&#10;    EntityViewBuilderInterface $viewBuilder,&#10;    NodeStorageInterface $nodeStorage,&#10;    AccountInterface $account,&#10;    array $configuration, $plugin_id, $plugin_definition) {&#10;    parent::__construct($configuration, $plugin_id, $plugin_definition);&#10;    $this-&gt;viewBuilder = $viewBuilder;&#10;    $this-&gt;nodeStorage = $nodeStorage;&#10;    $this-&gt;account = $account;&#10;  }&#10;&#10;  /**&#10;   * @param \Symfony\Component\DependencyInjection\ContainerInterface $container&#10;   * @param array $configuration&#10;   * @param string $plugin_id&#10;   * @param mixed $plugin_definition&#10;   *&#10;   * @return static&#10;   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException&#10;   * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException&#10;   */&#10;  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {&#10;    return new static(&#10;      $container-&gt;get('entity_type.manager')-&gt;getViewBuilder('node'),&#10;      $container-&gt;get('entity_type.manager')-&gt;getStorage('node'),&#10;      $container-&gt;get('current_user'),&#10;      $configuration,&#10;      $plugin_id,&#10;      $plugin_definition&#10;    );&#10;  }" description="DI for create and construct" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
