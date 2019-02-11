@@ -112,6 +112,9 @@
       <webServer id="c5488c06-773e-4d25-bc3f-dc90a5edbc46" name="Corvais [2020]" url="http://corvias.test:8080">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="ca213c5f-ca5f-4149-aaa8-430d197b708a" name="Inova" url="https://inova.dev.dd:8443/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
