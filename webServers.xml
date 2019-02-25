@@ -115,7 +115,10 @@
       <webServer id="ca213c5f-ca5f-4149-aaa8-430d197b708a" name="Inova" url="https://inova.dev.dd:8443/">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
-      <webServer id="ff31b2c6-a92e-4a5a-a37b-025f07ec87c0" name="Inova" url="http://inova.test:8080">
+      <webServer id="ff31b2c6-a92e-4a5a-a37b-025f07ec87c0" name="Inova (1)" url="http://inova.test:8080">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="4e997146-e573-4e00-af06-5ea4e2ce9241" name="Corvias SSU" url="http://corvias-ssu-portal.test:8080/">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
     </option>
