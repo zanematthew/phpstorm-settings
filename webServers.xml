@@ -121,6 +121,9 @@
       <webServer id="4e997146-e573-4e00-af06-5ea4e2ce9241" name="Corvias SSU" url="http://corvias-ssu-portal.test:8080/">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="11b5fa8f-8378-4504-884c-41b1246173f5" name="Docker4Drupal" url="http://drupal.docker.localhost:8000">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
