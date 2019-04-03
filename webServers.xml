@@ -124,6 +124,9 @@
       <webServer id="11b5fa8f-8378-4504-884c-41b1246173f5" name="Docker4Drupal" url="http://drupal.docker.localhost:8000">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="cedb74a3-78ff-4cea-88a1-7957ad85ba05" name="SCOH" url="http://scoh.test:8081">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
