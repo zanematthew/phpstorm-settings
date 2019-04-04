@@ -127,6 +127,9 @@
       <webServer id="cedb74a3-78ff-4cea-88a1-7957ad85ba05" name="SCOH" url="http://scoh.test:8081">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="2ead16e5-91c6-44a8-8d87-0b64f367f833" name="D8 Beta" url="http://drupal-8-7-0-beta1.dd:8083/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
