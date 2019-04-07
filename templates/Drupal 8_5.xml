@@ -207,4 +207,14 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="ZM::Block" value="&#10;namespace Drupal\$module_name$\Plugin\Block;&#10;&#10;use Drupal\Core\Block\BlockBase;&#10;&#10;/**&#10; * Class $class_name$&#10; *&#10; * @package Drupal\demo\Plugin\Block&#10; * @Block(&#10; *   id=&quot;$block_id$&quot;,&#10; *   admin_label=&quot;$description$&quot;&#10; * )&#10; */&#10;class $ClassName$ extends BlockBase {&#10;  public function build() {&#10;    // TODO: Implement build() method.&#10;  }&#10;}" description="Stuf for *Block.php" toReformat="false" toShortenFQNames="true">
+    <variable name="module_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="class_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="block_id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ClassName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
