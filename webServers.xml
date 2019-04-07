@@ -91,6 +91,45 @@
       <webServer id="5ba4ccd8-c789-41f8-a2e2-38dd7701cf19" name="Infosec D8" url="http://l.infosec-d8:8080">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="2773461f-a9f9-483d-b7a2-463c1c917e28" name="[2020] Nebrasak" url="http://nebraska.test:8080">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="2248d145-4e07-4e84-82d6-6a55a4864f82" name="Froedtert (1)" url="http://froedtert.test:8080">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="119acb91-4734-470e-9180-f962f032720c" name="BHS [2020]" url="http://blessing-health-system.test:8080">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="58c33e4c-1c66-4550-aba0-bb9de5004cc2" name="Infosec [2020]" url="http://infosec.test:8080/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="400af381-b9e8-4103-a2c6-8d203bfdfdc3" name="WSU" url="http://wsu.test:8080/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="8672fcc4-4ce5-49b9-97f9-7de0f6f3b636" name="Valley Health D8" url="http://valley-health-d8.test:8080">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="c5488c06-773e-4d25-bc3f-dc90a5edbc46" name="Corvais [2020]" url="http://corvias.test:8080">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="ca213c5f-ca5f-4149-aaa8-430d197b708a" name="Inova" url="https://inova.dev.dd:8443/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="ff31b2c6-a92e-4a5a-a37b-025f07ec87c0" name="Inova (1)" url="http://inova.test:8080">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="4e997146-e573-4e00-af06-5ea4e2ce9241" name="Corvias SSU" url="http://corvias-ssu-portal.test:8080/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="11b5fa8f-8378-4504-884c-41b1246173f5" name="Docker4Drupal" url="http://drupal.docker.localhost:8000">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="cedb74a3-78ff-4cea-88a1-7957ad85ba05" name="SCOH" url="http://scoh.test:8081">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="2ead16e5-91c6-44a8-8d87-0b64f367f833" name="D8 Beta" url="http://drupal-8-7-0-beta1.dd:8083/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
