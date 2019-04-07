@@ -36,7 +36,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="ZM::Route" value="$name$.index:&#10;  path: '/$path$'&#10;  defaults:&#10;    _controller: '\Drupal\$namespace$\Controller\$class$Controller::index'&#10;    _title: '$title$'&#10;  requirements:&#10;    _permission: '$permission$'" description="" toReformat="false" toShortenFQNames="true">
+  <template name="ZM::Route" value="$name$.index:&#10;  path: '/$path$'&#10;  defaults:&#10;    _controller: '\Drupal\$namespace$\Controller\$class$Controller::index'&#10;    _title: '$title$'&#10;  requirements:&#10;    _permission: '$permission$'" description="Stub for *.routing.yml" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="path" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="namespace" expression="" defaultValue="" alwaysStopAt="true" />

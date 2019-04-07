@@ -130,6 +130,9 @@
       <webServer id="2ead16e5-91c6-44a8-8d87-0b64f367f833" name="D8 Beta" url="http://drupal-8-7-0-beta1.dd:8083/">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="f10c9311-dc63-46e3-aea6-825810713c2d" name="[DD] Drupal 8" url="http://drupal-8-7-0-beta1.dd:8083/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
