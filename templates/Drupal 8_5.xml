@@ -218,4 +218,10 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="ZM::JS" value="(function($){&#10;  Drupal.behaviors.$module_namespace$ = {&#10;    attach: function(){&#10;      // My JS code here.&#10;    }&#10;  };&#10;})(jQuery);&#10;" description="Standard Drupal JavaScript" toReformat="false" toShortenFQNames="true">
+    <variable name="module_namespace" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
