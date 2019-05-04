@@ -133,6 +133,9 @@
       <webServer id="f10c9311-dc63-46e3-aea6-825810713c2d" name="[DD] Drupal 8" url="http://drupal-8-7-0-beta1.dd:8083/">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="a54104e2-9b30-4f38-8f38-3570ad61347d" name="umassmemorialhub.test" url="http://umassmemorialhub.test:8080/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
