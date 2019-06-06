@@ -1,17 +1,16 @@
 <application>
   <component name="MaterialThemeConfig">
     <option name="version" value="2.4.1.5-2018.1" />
-    <option name="selectedTheme" value="DARKER" />
+    <option name="selectedTheme" value="LIGHTER" />
     <option name="highlightColor" value="80cbc4" />
     <option name="highlightColorEnabled" value="true" />
-    <option name="isMaterialDesign" value="false" />
+    <option name="isContrastMode" value="true" />
     <option name="accentColor" value="3f51b5" />
     <option name="useMaterialIcons" value="false" />
-    <option name="isMaterialTheme" value="false" />
     <option name="isCompactStatusBar" value="true" />
     <option name="upperCaseTabs" value="true" />
     <option name="darkTitleBar" value="true" />
-    <option name="settingsSelectedTab" value="6" />
+    <option name="settingsSelectedTab" value="5" />
     <option name="fileStatusColorsEnabled" value="true" />
     <option name="userId" value="-23832a:16b2af4080b:-8000" />
   </component>
