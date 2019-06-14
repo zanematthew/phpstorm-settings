@@ -136,6 +136,9 @@
       <webServer id="a54104e2-9b30-4f38-8f38-3570ad61347d" name="umassmemorialhub.test" url="http://umassmemorialhub.test:8080/">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="9a814d88-0792-453d-a7f7-f6fad3e1ddbe" name="CooperD8" url="https://cooperd8.dev.dd:8083">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
