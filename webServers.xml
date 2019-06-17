@@ -139,6 +139,9 @@
       <webServer id="9a814d88-0792-453d-a7f7-f6fad3e1ddbe" name="CooperD8" url="https://cooperd8.dev.dd:8083">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="1fb163d2-61e1-4d18-b1a5-03f6f33b01c4" name="WordPress -- Demo" url="http://localhost:8080/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
