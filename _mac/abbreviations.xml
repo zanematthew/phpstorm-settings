@@ -1,9 +1,7 @@
 <application>
   <component name="AbbreviationManager">
     <abbreviations>
-      <action id="EditCustomVmOptions">
-        <abbreviation name="-Deditor.distraction.free.mode=true" />
-      </action>
+      <action id="EditCustomVmOptions" />
     </abbreviations>
   </component>
 </application>
