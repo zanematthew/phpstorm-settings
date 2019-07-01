@@ -148,6 +148,9 @@
       <webServer id="b2a59cb0-cc45-43b7-943d-a4eb1983b8ef" name="d8_base" url="http://d8-base.test:8080/">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="4c8c938f-6eb3-4d14-8151-c593e0cdd656" name="corvias" url="http://corvias.test:8080">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
