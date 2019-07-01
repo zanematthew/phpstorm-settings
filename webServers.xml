@@ -142,6 +142,12 @@
       <webServer id="1fb163d2-61e1-4d18-b1a5-03f6f33b01c4" name="WordPress -- Demo" url="http://localhost:8080/">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="0338fc67-d46e-4d67-8ca4-7ea6fa19d944" name="d8-base" url="http://d8-base.test:8080/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="b2a59cb0-cc45-43b7-943d-a4eb1983b8ef" name="d8_base" url="http://d8-base.test:8080/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
