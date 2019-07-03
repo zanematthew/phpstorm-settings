@@ -151,6 +151,9 @@
       <webServer id="4c8c938f-6eb3-4d14-8151-c593e0cdd656" name="corvias" url="http://corvias.test:8080">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="e0d1b159-2a15-4d98-81de-5cfc9dd44318" name="umass_memorial_hospital" url="http://umass-memorial-hospital.test:8080/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </application>
