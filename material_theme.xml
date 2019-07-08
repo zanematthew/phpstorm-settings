@@ -5,7 +5,9 @@
     <option name="highlightColor" value="80cbc4" />
     <option name="highlightColorEnabled" value="true" />
     <option name="isContrastMode" value="true" />
+    <option name="isMaterialDesign" value="false" />
     <option name="accentColor" value="3f51b5" />
+    <option name="useMaterialIcons" value="false" />
     <option name="isCompactStatusBar" value="true" />
     <option name="upperCaseTabs" value="true" />
     <option name="darkTitleBar" value="true" />
