@@ -14,5 +14,6 @@
     <mask>*.php</mask>
     <mask>*.yml</mask>
     <mask>*.js</mask>
+    <mask>*.module</mask>
   </component>
 </application>
